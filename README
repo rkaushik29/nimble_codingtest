@@ -18,3 +18,6 @@ Please complete the programming exercise as specified in the attach file:   Prog
 You'll also find an input file say.in. This file contains the input data that we'll use to evaluate your program.  say.out contains the output as expected given the input in say.in
 
 You may implement your solution in Java, C#, C++, Python, or Go.
+
+### Implementation:
+The output will be saved in `test.out`, runs in O(N) time and uses O(N) space for each password to be checked.
