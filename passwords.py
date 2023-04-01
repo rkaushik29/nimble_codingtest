@@ -27,7 +27,7 @@ def is_acceptable(password, output):
         prev_char = char
 
     # Do nothing if word == 'end'
-    if password == 'end':
+    if password[:-1] == 'end':
         return
     # Acceptable conditions
     elif has_vowel and not three_consecutive and not two_occurences:
