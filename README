@@ -1,0 +1,20 @@
+# Nimble Coding Test: Passwords
+
+Background:
+
+The purpose of this exercise is to evaluate your ability to write good code in as "realistic" of an environment as possible.  We feel a programming exercise where you can use your own environment is more representative of your ability to be a productive engineer than coding during an interview on the white board.
+
+In evaluating this exercise we look for the following, in priority order :
+
+1>  Does the program work as specified --ie, given the input file, does it produce the output?
+2>  Is the code easy to read and maintain?
+3>  Is the code written in a way that will perform well, scale well under load?
+
+
+Instructions:
+
+Please complete the programming exercise as specified in the attach file:   Programming Problem, passwords.htm
+
+You'll also find an input file say.in. This file contains the input data that we'll use to evaluate your program.  say.out contains the output as expected given the input in say.in
+
+You may implement your solution in Java, C#, C++, Python, or Go.
