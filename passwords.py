@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-def is_acceptable(password):
+def is_acceptable(password, output):
     has_vowel = False
     three_consecutive = False
     two_occurences = False
@@ -26,16 +26,19 @@ def is_acceptable(password):
             two_occurences = True
         prev_char = char
 
+    # Do nothing if word == 'end'
     if password == 'end':
         return
+    # Acceptable conditions
     elif has_vowel and not three_consecutive and not two_occurences:
-        print('<' + password + '> is acceptable.')
+        output.write('<' + password[:-1] + '> is acceptable.\n')
     else:
-        print('<' + password + '> is not acceptable.')
+        output.write('<' + password[:-1] + '> is not acceptable.\n')
 
 if __name__ == "__main__":
+    out = open('test.out', 'w')
     with open('./say.in') as f:
         lines = f.readlines()
 
         for line in lines:
-            is_acceptable(line)
+            is_acceptable(line, out)
